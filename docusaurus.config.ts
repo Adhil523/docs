@@ -117,6 +117,22 @@ export default async function createConfig() {
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
+        mermaid: {
+          theme: { light: 'default', dark: 'base' },
+          options: {
+            theme: 'base',
+            themeVariables: {
+              primaryColor: '#426367',
+              background: '#856c6b',
+              primaryBorderColor: '#426367',
+              tertiaryBorderColor: '#7a9394',
+              tertiaryTextColor: '#7a9394',
+              secondaryColor: '#778f91',
+              tertiaryColor: '#002026',
+              primaryTextColor: '#d6eeee',
+            },
+          },
+        },
         docs: {
           sidebar: {
             autoCollapseCategories: true,
