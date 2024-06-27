@@ -118,18 +118,33 @@ export default async function createConfig() {
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         mermaid: {
-          theme: { light: 'default', dark: 'base' },
-          options: {
-            theme: 'base',
-            themeVariables: {
-              primaryColor: '#426367',
-              background: '#856c6b',
-              primaryBorderColor: '#426367',
-              tertiaryBorderColor: '#7a9394',
-              tertiaryTextColor: '#7a9394',
-              secondaryColor: '#778f91',
-              tertiaryColor: '#002026',
-              primaryTextColor: '#d6eeee',
+          theme: { light: 'base', dark: 'base' },
+          config: {
+            dark: {
+              theme: 'base',
+              themeVariables: {
+                primaryColor: '#426367',
+                background: '#856c6b',
+                primaryBorderColor: '#426367',
+                tertiaryBorderColor: '#7a9394',
+                tertiaryTextColor: '#7a9394',
+                secondaryColor: '#778f91',
+                tertiaryColor: '#002026',
+                primaryTextColor: '#d6eeee',
+              },
+            },
+            light: {
+              theme: 'base',
+              themeVariables: {
+                primaryColor: '#ebf0f0',
+                background: '#1c1e1e',
+                primaryBorderColor: '#d5e1e1',
+                tertiaryBorderColor: '#d5e1e1',
+                tertiaryTextColor: '#426367',
+                secondaryColor: '#dee7e7',
+                tertiaryColor: '#ffffff',
+                primaryTextColor: '#426367',
+              },
             },
           },
         },
